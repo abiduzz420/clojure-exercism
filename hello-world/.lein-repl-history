@@ -1,0 +1,4 @@
+(defn hello [arg]
+(println "Hello," arg "!"))
+(hello "World")
+exit

@@ -1,0 +1,4 @@
+(defn response-for [tell-me]
+(ends-with? tell-me "?"))
+(use 'clojure.string)
+exit

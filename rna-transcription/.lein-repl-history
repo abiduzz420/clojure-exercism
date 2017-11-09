@@ -1,0 +1,59 @@
+(= "A" "A")
+(compare "A" "A")
+(defn check [char]
+(= char "G"))
+(check "G")
+(check "I")
+(defn check [char]
+(cond
+(= char "G") "C"
+(= char "C") "G"
+(= char "T") "A"
+(= char "A") "U"))
+(check "A")
+(check "C")
+(check "T")
+(check "P")
+(map "hello")
+(println (map "Hello"))
+(defn compl-nucleotide [argument]
+  (cond
+        (compare argument "G") "C"
+        (compare argument "C") "G"
+        (compare argument "T") "A"
+        (compare argument "A") "U"
+        :else (assert false)))
+(map #(compl-nucleotide %) (str/split "hello324World" #"\d+"))
+(:require [clojure.string :as str])
+(->> (str/split arg #"\d+")
+(->> (str/split "GGTAC" #"\d+")
+(map #(println) ["A" "B" "C"])
+(map #(println %) ["A" "B" "C"])
+exit
+(str/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")
+(clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")
+(map #(%) (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+"))
+(map #(* % %) (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+"))
+(map #(+ % %) (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+"))
+(doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (println item))
+(defn print-char [item]
+(print item))
+(print-char "D")
+(defn print-char [item]
+(println item))
+(print-char [2 3])
+(doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (print-char item))
+(defn print-char [item]
+(cond 
+(= item "G") "C"
+(= item "C") "G"
+(= item "T") "A"
+(= item "A") "U"))
+(print-char "G")
+(print-char "T")
+(print-char "W")
+(doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (print-char item))
+(doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (print-char (str item)))
+(println (doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (print-char (str item))))
+(doseq [ item (clojure.string/split "q1w2e3r4t5y6u7i8o9p0" #"\d+")] (print-char (str item)))
+exit
